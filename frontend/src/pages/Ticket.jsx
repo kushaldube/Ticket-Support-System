@@ -82,10 +82,9 @@ function Ticket() {
   }
 
   return (
-    <section>
+    <section className="outerArea-container-2">
       <div className="ticket-page">
         <header className="ticket-header">
-          <BackButton url="/tickets" />
           <h2>
             Ticket ID: {ticket._id}
             <span className={`status status-${ticket.status}`}>
@@ -98,7 +97,7 @@ function Ticket() {
           <h3>Product: {ticket.product}</h3>
           <hr />
           <div className="ticket-desc">
-            <h3>Description of Issue</h3>
+            <h3 style={{color:"black"}}>Description of Issue</h3>
             <p>{ticket.description}</p>
           </div>
           <h2>Notes</h2>
@@ -143,13 +142,15 @@ function Ticket() {
         {notes.map((note) => (
           <NoteItem key={note._id} note={note} />
         ))}
-
+        <div className="close-tkt-btn">
         {ticket.status !== "closed" && (
-          <button onClick={onTicketClose} className="btn btn-block btn-danger">
+          <button onClick={onTicketClose} className="btn">
             Close Ticket
           </button>
         )}
+        </div>
       </div>
+      <BackButton url="/tickets" />
     </section>
   )
 }
