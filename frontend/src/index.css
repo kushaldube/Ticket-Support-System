@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -7,8 +8,10 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Josefin sans', sans-serif;
   height: 100vh;
+  background-color: #FFEADD;
   background-color: #FFEADD;
 }
 
@@ -84,6 +87,10 @@ h3 {
 
 .header ul li a svg {
   margin-right: 5px;
+}
+
+.home{
+  padding: 90px 20px !important;
 }
 
 .heading {
@@ -206,10 +213,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .btn {
   padding: 10px 20px;
   border: 1px solid #000;
-  border-radius: 5px;
-  background: #000;
-  color: #fff;
-  font-size: 16px;
+  border-radius: 100px;
+  background: #FF8989;
+  color: #000;
+  font-size: 18px;
   font-weight: 700;
   cursor: pointer;
   text-align: center;
@@ -275,7 +282,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-size: 1.3rem;
 }
 
-.ticket,
+.ticket, 
 .ticket-headings {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -283,7 +290,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  background: #f4f4f4;
+  background: #FF8989;
   padding: 10px 15px;
   border-radius: 5px;
   text-align: center;
