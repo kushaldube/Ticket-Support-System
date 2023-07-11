@@ -38,8 +38,8 @@ or
 ***
 This project is part of an internship provided by Ethnus
 The group members of the project are:
-- Kushal Dube
-- Naman Hiran
-- Animesh Anant
-- Aryaman Mishra
+- Kushal Dube (20BCE10488)
+- Naman Hiran (20BCE10502)
+- Animesh Anant (20BCE10474)
+- Aryaman Mishra (20BCE10475)
 ***
