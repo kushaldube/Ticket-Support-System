@@ -55,8 +55,8 @@ h3 {
   background-color: #FCAEAE;
   font-size: 40px;
   padding: 20px;
-  margin-bottom: 60px;
 }
+
 
 .heading h1{
   color: #FF6666;
@@ -111,6 +111,7 @@ h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: 19.38vh;
 }
 
 .btn-nt{
@@ -185,9 +186,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .form {
-  width: 70%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .form-group {
   margin-bottom: 10px;
@@ -211,7 +215,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 10px 10px;
   border: 1px solid #000;
   border-radius: 100px;
   background: #FF8989;
@@ -219,11 +223,23 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
-  text-align: center;
   appearance: button;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn-sub{
+  background: #FF8989;
+  color: white;
+  border: 1px solid salmon;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 5px 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .btn svg {
@@ -257,6 +273,35 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .btn:hover {
   transform: scale(0.98);
+}
+
+.outerArea-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: #FF6666;
+  border-radius: 25px;
+  height: 100%;
+}
+
+.outerArea-container .form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outerArea-container h2{
+  padding-top: 20px;
+}
+
+.outerArea-newTicket .heading h1{
+  color: #e6e6e6;
 }
 
 .ticket-created {
@@ -312,7 +357,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .status-new {
-  background-color: green;
+  background-color: rgb(14, 101, 14);
   color: #fff;
   border-radius: 10px;
 }
@@ -451,6 +496,13 @@ footer {
   animation: spin 1.2s linear infinite;
 }
 
+.login-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -496,6 +548,10 @@ footer {
   .intro img{
     width: 75% !important;
     height: 75% !important;
+  }
+
+  .heading{
+    font-size: 2rem;
   }
 }
 

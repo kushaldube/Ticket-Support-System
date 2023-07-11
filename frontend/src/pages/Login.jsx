@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { toast } from "react-toastify"
-import { Link, useNavigate } from "react-router-dom"
+import { Link, NavLink, useNavigate } from "react-router-dom"
 import { FaSignInAlt } from "react-icons/fa"
 import { useSelector, useDispatch } from "react-redux"
 import { login, reset } from "../features/auth/authSlice"
@@ -58,12 +58,11 @@ function Login() {
 
   return (
     <>
-      <section className="outerArea">
+    <div className="login-sec">
         <section className="heading">
           <h1>
             <FaSignInAlt /> Login
           </h1>
-          <p>Please log in to get support</p>
         </section>
 
         <section className="form">
@@ -92,12 +91,11 @@ function Login() {
                 required
                 />
             </div>
-            <div className="form-group">
-              <button className="btn btn-block">Submit</button>
-            </div>
+              <button className="btn-sub">Submit</button>
           </form>
+            <p>Don't have an account? Register <Link to="/register"><em>here</em></Link></p>
         </section>
-      </section>
+    </div>
     </>
   )
 }

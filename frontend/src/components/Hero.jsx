@@ -20,9 +20,17 @@ const slideImages = [
       caption: 'Slide 2'
     },
     {
-      url: 'https://www.collegebatch.com/static/clg-gallery/vit-bhopal-university-bhopal-218149.jpg',
+      url: 'https://img.freepik.com/free-photo/carpenter-cutting-mdf-board-inside-workshop_23-2149451074.jpg?w=2000',
       caption: 'Slide 3'
     },
+    {
+      url: 'https://www.digitaltrends.com/wp-content/uploads/2018/05/insecure_router_getty.jpg?p=1',
+      caption: 'Slide 4'
+    },
+    {
+      url: 'https://bookdirtbusters.com/wp-content/uploads/2020/10/house-cleaning-service.jpeg',
+      caption: 'Slide 5'
+    }
 ];
 
 

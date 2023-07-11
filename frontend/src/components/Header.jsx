@@ -20,7 +20,6 @@ function Header() {
       <div className="logo">
         <Link to="/">Uni Support</Link>
       </div>
-    </header>
       <ul>
         {
           user && (<li>
@@ -30,6 +29,7 @@ function Header() {
         </li>)
         }
       </ul>
+      </header>
     </>
   )
 }

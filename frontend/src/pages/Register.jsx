@@ -65,12 +65,12 @@ function Register() {
 
   return (
     <>
-      <section className="outerArea">
+    <div className="login-sec">
         <section className="heading">
           <h1>
             <FaUser /> Register
           </h1>
-          <p>Please create an account</p>
+          <p>Create new account</p>
         </section>
 
         <section className="form">
@@ -124,11 +124,11 @@ function Register() {
                 />
             </div>
             <div className="form-group">
-              <button className="btn btn-block">Submit</button>
+              <button className="btn-nt">Submit</button>
             </div>
           </form>
         </section>
-      </section>
+    </div>
     </>
   )
 }

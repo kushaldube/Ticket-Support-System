@@ -30,14 +30,13 @@ function Tickets() {
 
   return (
     <>
-      <section className="outerArea">
-        <BackButton url="/" />
-        <h1><u>Tickets</u></h1>
+      <section className="outerArea-container">
+         <h2 style={{color:"white"}}>Ticket Status</h2>
         <div className="tickets">
           <div className="ticket-headings">
-            <div>Date</div>
-            <div>Product</div>
-            <div>Status</div>
+            <div>Date Reported</div>
+            <div>Problem</div>
+            <div>Current Status</div>
             <div></div>
           </div>
           {tickets.map((ticket) => (
@@ -45,6 +44,7 @@ function Tickets() {
           ))}
         </div>
       </section>
+      <BackButton url="/" />
     </>
   )
 }

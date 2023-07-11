@@ -44,39 +44,40 @@ function NewTicket() {
 
   return (
     <>
-      <section className= "outerArea">
-        <BackButton url="/" />
+    <div className="outerArea-container">
+      <section className= "outerArea-newTicket">
         <section className="heading">
-          <h1>Create New Ticket</h1> 
-          <p>Please fill out the form below</p>
+          <h1>Raise a New Ticket</h1> 
         </section>
 
         <section className="form">
           <div className="form-group">
-            <label htmlFor="name">Customer Name</label>
+            <label htmlFor="name">Student Name</label>
             <input type="text" className="form-control" value={name} disabled />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Customer Email</label>
+            <label htmlFor="email">Student Email</label>
             <input type="text" className="form-control" value={email} disabled />
           </div>
           <form onSubmit={onSubmit}>
             <div className="form-group">
-              <label htmlFor="product">Issue</label>
+              <label htmlFor="product">Problem Subject</label>
               <select
                 name="product"
                 id="product"
                 value={product}
                 onChange={(e) => setProduct(e.target.value)}
               >
-                <option value="iPhone">Furniture</option>
-                <option value="Macbook Pro">Electrical</option>
-                <option value="iMac">Wifi</option>
-                <option value="iPad">Cleaning</option>
+                <option value="furniture">Furniture</option>
+                <option value="electrical">Electrical</option>
+                <option value="plumbing">Plumbing</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="wifi">Wifi</option>
+
               </select>
             </div>
             <div className="form-group">
-              <label htmlFor="description">Description of the issue</label>
+              <label htmlFor="description">Description</label>
               <textarea
                 name="description"
                 id="description"
@@ -87,11 +88,13 @@ function NewTicket() {
               ></textarea>
             </div>
             <div className="form-group">
-              <button className="btn btn-block">Submit</button>
+              <button className="btn-sub">Submit</button>
             </div>
           </form>
         </section>
       </section>
+      </div>
+    <BackButton url="/" />
     </>
   )
 }
